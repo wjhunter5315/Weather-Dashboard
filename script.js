@@ -42,10 +42,8 @@ $("#confirm").on("click", function() {
 
             for (i=7; i<forecastList.length; i+=8) {
                 var forecastDiv = $("<div>");
-                var forecastDate = forecastList[i].dt_text;
+                var forecastDate = forecastList[i].dt_txt;
                 console.log(forecastDate);
-                var dateJSON = JSON.stringify(forecastDate);
-                console.log(dateJSON);
                 var forecastTemp = forecastList[i].main.temp;
                 var forecastHumidity = forecastList[i].main.humidity;
                 var forecastIcon = forecastList[i].weather[0].icon;
@@ -58,3 +56,8 @@ $("#confirm").on("click", function() {
     });
 
 })
+// if (uvNow <= 2.9) {  green = 0 - 2.9
+// yellow = 3.0 - 5.9
+// orange = 6.0 - 7.9
+// red = 8.0 - 10.9
+// violet = 11.0+

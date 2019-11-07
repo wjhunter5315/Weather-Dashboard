@@ -5,19 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <nav id = "navBar" class="navbar">
+        <span id = "navText" class="navbar-brand mb-0 h1">Weather Dashboard</span>
+    </nav>
 </head>
 
-<body>
-    <div class = "container2">
-        <p>Enter a location:</p>
-            <input class="myLocation" type="text" placeholder="Enter City"> 
-            <button id="confirm" type="button">Get Forecast</button>
-            <br> <br>
-            <div class = "current-weather"></div>
-            <div class = "weather-forecast"></div>
+<body>    
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-6 col-md-4">
+                    <p>Enter a location:</p>
+                <input class="myLocation" type="text" placeholder="Enter City"> 
+                <button id="confirm" type="button">Get Weather</button>
+                <br> <br>
+                <div class="list-group">
+                
+                </div>
+            </div>
+            <div class = "col-12 col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        Current Weather
+                        <div class = "current-weather"></div>
+                        <div class = "weather-forecast"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
+    
+
     <script src="./script.js"></script>
 </body>
 </html>

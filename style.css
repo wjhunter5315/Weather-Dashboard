@@ -1,3 +1,15 @@
 .weather-forecast {
-    background-color: blue;
+    background-color: skyblue;
+}
+
+#navText {
+    margin-left: 35%;
+}
+
+#navBar {
+    background-color: cornflowerblue;
+}
+
+.container {
+    padding-top: 20px;
 }
